@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KinetiSync | 3D Gesture Particles</title>
+    <title>KinetiSync | Quantum HUD</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="ui-wrapper">
         <header>
-            <h1>KINETISYNC v1.0</h1>
-            <div id="status"><span class="dot"></span> NEURAL LINK ACTIVE</div>
+            <h1 class="glitch-text">KINETISYNC</h1>
+            <div id="status"><span class="dot"></span> NEURAL LINK STABLE</div>
         </header>
 
         <div id="controls-guide">
-            <div class="control-item"><span>1 - 5</span> Switch Shape Templates</div>
-            <div class="control-item"><span>SPACE</span> Trigger Firework Burst</div>
-            <div class="control-item"><span>HAND X</span> Morphing Control</div>
-            <div class="control-item"><span>HAND Y</span> Pulse & Glow Intensity</div>
+            <div class="control-label">SYSTEM COMMANDS</div>
+            <div class="control-item"><span>1-5</span> TEMPLATE SELECTOR</div>
+            <div class="control-item"><span>SPACE</span> PARTICLE BURST</div>
+            <div class="control-item"><span>HAND X</span> DIMENSIONAL MORPH</div>
+            <div class="control-item"><span>HAND Y</span> PULSE INTENSITY</div>
         </div>
     </div>
 
     <div class="camera-container">
         <video id="webcam" autoplay playsinline></video>
-        <!-- <div class="scan-line"></div> -->
         <div class="corner-bracket top-left"></div>
         <div class="corner-bracket bottom-right"></div>
     </div>
 
-    <script type="importmap">
-    {
+    <script type="importmap">    {
         "imports": {
             "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
         }
