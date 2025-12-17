@@ -1,0 +1,25 @@
+body { margin: 0; overflow: hidden; background: #000; font-family: 'Segoe UI', sans-serif; }
+
+#webcam { 
+    display: block; 
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 240px; 
+    height: 180px; 
+    border: 2px solid #00ffcc;
+    border-radius: 12px;
+    transform: scaleX(-1); /* Mirror the camera */
+    z-index: 10;
+}
+
+#info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    pointer-events: none;
+}

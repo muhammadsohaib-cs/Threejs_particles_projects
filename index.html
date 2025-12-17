@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Gesture Particles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="webcam" autoplay playsinline></video>
+    
+    <div id="info">
+        Pinch to change color | Open Palm to Expand<br>
+        <span id="gesture-name">Detecting Hand...</span>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
